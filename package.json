@@ -100,7 +100,7 @@
     "test": "jenkins-mocha ./tests/*.js",
     "precoverage": "npm run test",
     "coverage": "nyc check-coverage && nyc report -r lcov -r text -r text-summary",
-    "prepare": "npm run coverage"
+    "prepublishOnly": "npm run coverage"
   },
   "preferGlobal": true,
   "bugs": {
